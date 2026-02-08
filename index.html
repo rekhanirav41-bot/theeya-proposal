@@ -70,7 +70,8 @@ Are you ready to be stuck with me forever? 😌💍<br>
 Are you ready to be the luckiest woman in the world? Because baby, I already feel lucky, happy, and grateful to the Almighty to have you in my life 🙏💗
       </p>
 
-      function showProposal() {
+      <script>
+function showProposal() {
   document.getElementById("para").style.display = "none";
   document.getElementById("proposal").style.display = "block";
 
@@ -79,24 +80,14 @@ Are you ready to be the luckiest woman in the world? Because baby, I already fee
     alert("Tap anywhere to start music ❤️");
   });
 }
-    </div>
-
-  </div>
-</div>
-
-<script>
-function showProposal() {
-  document.getElementById("para").style.display = "none";
-  document.getElementById("proposal").style.display = "block";
-}
 
 function yes() {
   document.getElementById("proposal").innerHTML =
-  "<h2>You just made me the happiest man alive ❤️<br>Happy Propose Day my love 💍</h2>";
+  "<h2>You just made me the happiest man alive ❤️</h2>";
 }
 
 function no() {
-  alert("Error: 'No' option not available 😌❤️");
+  alert("No option disabled 😌❤️");
 }
 </script>
 
