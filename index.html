@@ -70,13 +70,15 @@ Are you ready to be stuck with me forever? 😌💍<br>
 Are you ready to be the luckiest woman in the world? Because baby, I already feel lucky, happy, and grateful to the Almighty to have you in my life 🙏💗
       </p>
 
-      <button class="continue" onclick="showProposal()">Continue ❤️</button>
-    </div>
+      function showProposal() {
+  document.getElementById("para").style.display = "none";
+  document.getElementById("proposal").style.display = "block";
 
-    <div id="proposal" style="display:none;">
-      <h2>Will you be my girlfriend, Theeya? 💌❤️</h2>
-      <button class="yes" onclick="yes()">Yes 💖</button>
-      <button class="no" onclick="no()">No 😢</button>
+  var music = document.getElementById("music");
+  music.play().catch(() => {
+    alert("Tap anywhere to start music ❤️");
+  });
+}
     </div>
 
   </div>
